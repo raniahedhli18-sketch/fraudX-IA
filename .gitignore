@@ -1,6 +1,10 @@
 .venv/
 __pycache__/
 *.pyc
+<<<<<<< HEAD
 .pytest_cache/
 data/creditcard.csv
 data/fraudx.db
+=======
+.pytest_cache/
+>>>>>>> 9e1506b (Initial commit with LFS)
