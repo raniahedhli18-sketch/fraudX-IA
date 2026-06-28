@@ -1,12 +1,9 @@
-from sqlalchemy import Column
-from sqlalchemy import Float
-from sqlalchemy import Integer
+from sqlalchemy import Column, Float, Integer
 
 from fraudx.db import Base
 
 
 class Transaction(Base):
-
     __tablename__ = "transactions"
 
     id = Column(Integer, primary_key=True)

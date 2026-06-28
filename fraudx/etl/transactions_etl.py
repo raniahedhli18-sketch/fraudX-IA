@@ -11,11 +11,9 @@ def ingest_transactions(csv_path):
     session = SessionLocal()
 
     for _, row in df.iterrows():
-
         tx = Transaction(
             time=row["Time"],
             amount=row["Amount"],
-
             v1=row["V1"],
             v2=row["V2"],
             v3=row["V3"],
@@ -44,8 +42,7 @@ def ingest_transactions(csv_path):
             v26=row["V26"],
             v27=row["V27"],
             v28=row["V28"],
-
-            fraud_label=row["Class"]
+            fraud_label=row["Class"],
         )
 
         session.add(tx)

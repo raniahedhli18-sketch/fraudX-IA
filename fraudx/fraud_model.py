@@ -20,16 +20,6 @@ def predict_transaction(features):
 
     probability = model.predict_proba(data)[0][1]
 
-    prediction = (
-        "FRAUD"
-        if probability >= 0.5
-        else "LEGIT"
-    )
+    prediction = "FRAUD" if probability >= 0.5 else "LEGIT"
 
-    return {
-        "prediction": prediction,
-        "fraud_probability": round(
-            float(probability),
-            4
-        )
-    }
+    return {"prediction": prediction, "fraud_probability": round(float(probability), 4)}

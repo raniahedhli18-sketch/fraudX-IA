@@ -3,6 +3,4 @@ from fraudx.etl.transactions_etl import ingest_transactions
 
 init_db()
 
-ingest_transactions(
-    "data/creditcard.csv"
-)
+ingest_transactions("data/creditcard.csv")
